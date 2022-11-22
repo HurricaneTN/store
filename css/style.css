@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-image: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: rgba(10, 10, 10, 0.3);
+}
+h1 {
+  color: beige;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 200px 60px 0 60px;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+nav li span {
+  padding-left: 5px;
+}
+
+li a {
+  padding: 5px;
+  background-color: white;
+  text-decoration: none;
+}
+
+.cart svg {
+  vertical-align: text-top;
+}
+
+.cart a {
+  background-color: royalblue;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container,
+.products-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+
+.image {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 2%;
+  position: relative;
+  overflow: hidden;
+}
+
+.legende {
+  display: flex;
+  flex-flow: row wrap;
+}
+.legende h3 {
+  text-align: end;
+}
+
+.image h2,
+h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  width: 50%;
+}
+
+.cart-footer {
+  display: flex;
+}
+
+.cart-footer svg {
+  width: 250px;
+}
+
+.add-cart {
+  position: absolute;
+  width: 100%;
+  background-color: indianred;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.image:hover img {
+  filter: contrast(60%);
+}
+
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4,
+.image:hover .cart5,
+.image:hover .cart6,
+.image:hover .cart7,
+.image:hover .cart8 {
+  bottom: 0%;
+  opacity: 1;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+/* ------------- Page Cart ------------*/
+
+.products-container {
+  max-width: 950px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.products-container svg {
+  width: 25px;
+  height: 25px;
+  color: red;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.product-header {
+  width: 100%;
+  max-width: 950px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid lightgray;
+  margin: 0 auto;
+}
+
+.product-title {
+  width: 45%;
+}
+
+.price {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.quantity {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.total {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.product {
+  width: 45%;
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 0;
+}
+
+.product svg {
+  margin: 10%;
+}
+
+.name-product {
+  margin: 10%;
+}
+
+.cost {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  margin: 5% 0 0 1%;
+}
+
+.product-incart {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  margin: 5% 0 0 6%;
+}
+
+.total-product {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  margin: 5% 0 0 8%;
+}
+
+.products {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products img {
+  width: 75px;
+}
+
+.cartTotalContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.cartTotalTitle {
+  width: 30%;
+}
+
+.cartTotal {
+  width: 10%;
+}
+
+.add-product,
+.deduce-product {
+  font-size: 20px;
+  color: blue;
+  padding-top: 3px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+button {
+  background: none;
+}
+.custom-btn {
+  width: 500px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  margin-top: 5%;
+  margin-left: 75%;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.btn-3 {
+  background: rgb(10, 123, 168);
+  background: linear-gradient(0deg, rgb(0, 110, 153) 0%, rgb(16, 98, 180) 100%);
+  width: 200px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-3 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-3:before,
+.btn-3:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: rgba(2, 126, 251, 1);
+  transition: all 0.3s ease;
+}
+.btn-3:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-3:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3:hover {
+  background: transparent;
+  box-shadow: none;
+}
+.btn-3:hover:before {
+  height: 100%;
+}
+.btn-3:hover:after {
+  width: 100%;
+}
+.btn-3 span:hover {
+  color: rgba(2, 126, 251, 1);
+}
+.btn-3 span:before,
+.btn-3 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: rgba(2, 126, 251, 1);
+  transition: all 0.3s ease;
+}
+.btn-3 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-3 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3 span:hover:before {
+  height: 100%;
+}
+.btn-3 span:hover:after {
+  width: 100%;
+}
